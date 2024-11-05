@@ -1,0 +1,137 @@
+Reset some default browser styles
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* background-color: #CA151C; */
+    /* background: linear-gradient(to right, #CA151C, #6F0F10); */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Floating Navbar Styling */
+.navbar {
+    background-color: rgba(202, 21, 28, 0.95); /* Glossy effect */
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    width: fit-content; /* Ensure the navbar is only as wide as its content */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+/* Styling for Regular Links */
+/* .nav-links li {
+    margin: 0 15px;
+} */
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+/* Styling for Home Logo Link */
+.home-link {
+    margin: 0 30px; /* Extra margin for the circular logo */
+}
+
+/* Logo Styling */
+.nav-links .logo {
+    margin: 0 30px; /* Extra margin to separate the logo from other links */
+}
+
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    vertical-align: auto;
+    border-radius: 50%; /* Makes the link circular */
+    /* overflow: hidden; */
+    height: 30px; /* Default height for logo */
+    width: auto; /* Maintain aspect ratio */
+    /* transition: all 0.3s ease; */
+    transition: height 0.3s ease, border 0.3s ease, transform 0.3s ease;
+    border: 5px solid transparent;
+    padding: 50px;
+}
+
+.nav-logo {
+    height: 100px;
+    width: auto;
+    border-color: rgba(202, 21, 28, 0.95);
+    border-width: 100ppx;
+}
+
+/* Hover effects for Other Links */
+.nav-links a:hover {
+    color: #ff6600; /* Accent color when hovering */
+}
+
+body.home-page .nav-logo {
+    height: 75px; /* Increase height for logo on homepage */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Increased Size for Active Logo */
+/* .nav-logo-link.active,
+.nav-logo-link:hover {
+    height: auto; 
+    width: auto;
+    border-color: #fff;
+    border-radius: 100%; 
+    transform: scale(1.2,1.2); 
+    overflow: hidden; 
+} */
+
+.nav-logo:hover{
+    height: 50px; /* Increase height for logo on homepage */
+    width: auto; /* Maintain aspect ratio */
+    border-color: #fff; /* White border for active logo */
+    border-radius: 100%; /* Ensure the border remains circular */
+    transform: scale(1.2.1.2); /* Zoom out effect */
+    overflow: auto; 
+        /* -webkit-transform: scale(1.06, 1.06);
+        transform: scale(1.06, 1.06);
+        border: 0.375rem solid #0da2ff;
+        box-shadow: 0 -0.5rem 2rem #0da2ff; */
+      
+}
+
+
+
+

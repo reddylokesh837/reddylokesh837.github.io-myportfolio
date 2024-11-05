@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The TechnoCreative</title>
+    <link rel="stylesheet" href="styless.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script>
+        THREE.ShapeUtils.triangulateShape = (function () {
+                var pnlTriangulator = new PNLTRI.Triangulator();
+                return function triangulateShape(contour, holes) {
+                    return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+                };
+            })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar container-fluid">
+            <div class="nav-links">
+                <div class="nav-item"><a href="#about">About Me</a></div>
+                <div class="nav-item"><a href="#portfolio">Resume</a></div>
+                <div class="nav-item home-link">
+                    <a href="NEW PORTFOLIO/index.html" class="nav-logo-link" >
+                        <img src="Profilenew.png" alt="Portfolio" class="nav-logo"> <!-- Replace 'Profilenew.png' with your logo file -->
+                    </a>
+                </div>
+                <div class="nav-item"><a href="#services">Services</a></div>
+                <div class="nav-item"><a href="#contact">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero container-fluid">
+            <div class="shine-effect"></div>
+            <div><h1 class="title">Welcome to My Creative World!</h1> </div>             
+            <div class="typing-container">
+                <div id="typed-output"></div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
